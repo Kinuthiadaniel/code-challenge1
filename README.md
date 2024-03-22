@@ -15,7 +15,7 @@ Git
 
 ### Installation instruction
 ```
-Git clone https://github.com/h......
+Git clone https://github.com/Kinuthiadaniel/code-challenge1
 
 ```
 
@@ -32,7 +32,7 @@ github.com/Kinuthiadaniel
 
 ### License
 The content of this site is licensed under the MIT license
-Copyright (c) 2018.
+Copyright (c) 2024.
 
 
 
