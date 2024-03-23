@@ -1,12 +1,15 @@
 //function declaration
+const prompt = require('prompt-sync')({sigint:true})
 function speedDetector(driverSpeed){
-  //variables and values
+  //variables assignment to values
 
   const speed = 70;
   let demeritPoints = (driverSpeed - speed)/5;
-  const demeritLimit = 12;
-  // conditions
-  if (demeritPoints >= demeritLimit){
+  const demeritthreshold = 12;
+
+  // conditions for awarding points
+
+  if (demeritPoints >= demeritthreshold){
     return "License Suspended";
   }
   else if ( driverSpeed<=speed){
@@ -18,5 +21,5 @@ function speedDetector(driverSpeed){
 
 }
 //function call and print
-speedDetector(90);
-console.log(speedDetector(90));
+const driverSpeed = parseInt(prompt("Enter your speed: "))
+console.log(speedDetector(driverSpeed));

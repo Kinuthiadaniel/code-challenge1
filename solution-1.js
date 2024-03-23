@@ -1,4 +1,5 @@
 // Function declaration
+const prompt = require('prompt-sync')({sigint:true})
 function markGrader(score){
   // conditions
    if(score < 0 || score > 100){
@@ -17,7 +18,7 @@ function markGrader(score){
     return "E"
   }
  }
-
+const score =parseInt(prompt("Enter the score: "))
  //print grade
-  console.log(markGrader(500));
+  console.log(markGrader(score));
 
